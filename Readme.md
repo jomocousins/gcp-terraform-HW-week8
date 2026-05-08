@@ -1,4 +1,24 @@
+What you must include for a VM
+When you make a VM in Terraform, you need the basics that tell Google Cloud what to build:
 
+the VM name,
+
+the machine type,
+
+the zone,
+
+the boot disk/image,
+
+and the network settings.
+
+Without those, Terraform does not know what kind of VM to create.
+
+How to get the internal and external IPs
+After the VM is created, Terraform can show you the IP addresses.
+
+Internal IP = the private address the VM uses inside the network.
+
+External IP = the public address people can use from outside the network.
 
 
 Q/A
