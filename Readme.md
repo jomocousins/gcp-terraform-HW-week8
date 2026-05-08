@@ -1,3 +1,8 @@
+
+
+
+Q/A
+
 The difference between the two is the fault tolerance makes sure the system can keep running during downtime or failures and High Availability decreases the downtime through quick recovery and failover mechanisms.
 High Availability is best to strive for because of it being more cost-effective and Fault tolerance is more costly due to full redundancy. https://cloud.google.com/blog/products/databases/breaking-down-cloud-sqls-3-fault-tolerance-mechanisms
 https://www.couchbase.com/blog/high-availability-vs-fault-tolerance/
