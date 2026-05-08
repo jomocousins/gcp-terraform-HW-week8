@@ -8,13 +8,11 @@ To create the MIG in the Google Cloud Console, go to Compute Engine → Instance
 
 After that, turn on autoscaling and set the minimum and maximum number of VMs. You can base scaling on things like CPU usage or load balancing demand.
 
-Next, enable autohealing by attaching a health check that already exists. If an instance fails that health check, Google Cloud can replace it automatically after the delay you set.
+Next, enable autohealing by attaching a health check Name the health check, set the scope to regional, then set the protocol to tcp and port 80. Cloud can replace it automatically after the delay you set.
 
 If you are using a regional MIG, Google Cloud will spread instances across the selected zones. You should verify that the instances are balanced across zones after scaling events.
 
 Other important settings include rolling updates, which help update instances without downtime, and attaching the MIG to a backend service or target pool if it will receive traffic from a load balancer. The health check is especially important because an incorrect one can cause healthy instances to be replaced by mistake.
-
-
 
 
 
@@ -29,6 +27,10 @@ Internal IP is the private address the VM uses inside the network.
 
 External IP is the public address people can use from outside the network.
 
+https://registry.terraform.io/providers/hashicorp/google/3.40.0/docs/resources/compute_instance#network_interface.0.network_ip-3
+https://registry.terraform.io/providers/hashicorp/google/3.40.0/docs/resources/compute_instance#argument-reference
+https://developer.hashicorp.com/terraform/language/block/output
+https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/google-cloud-platform-outputs
 
 Q/A
 
