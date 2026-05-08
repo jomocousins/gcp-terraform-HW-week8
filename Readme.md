@@ -1,8 +1,8 @@
 Runbook
 
-Managed Instance Group (MIG) ClickOps Runbook
+ The goal is to create a configured Managed Instance Group via ClickOps that automatically scales, heals, and distributes instances across multiple zones.
+Managed Instance Group ClickOps Runbook
 Goal
-Create a fully configured Managed Instance Group (MIG) via the GCP Console (ClickOps) that automatically scales, heals, and distributes instances across multiple zones.
 
 To create the MIG in the Google Cloud Console, go to Compute Engine → Instance groups → Create instance group, then choose Managed instance group. Select your instance template, choose a regional or multi-zone setup, and set the initial number of instances.
 
